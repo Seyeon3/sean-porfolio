@@ -42,19 +42,19 @@ export const Project = () => {
       title: "Portfolio Website",
       description:
         "A responsive personal portfolio built with React and Tailwind CSS.",
-      image: "/public/portfolio.jpg",
+      image: "/portfolio.jpg",
       link: "https://yourportfolio.com",
     },
     {
       title: "BerdeVentures Travel Booking",
       description: "An online travel agency booking system",
-      image: "/public/travel.jpg",
+      image: "/travel.jpg",
       link: "https://seyeon3.github.io/Travel-Website/",
     },
     {
       title: "Philippine National Bank",
       description: "an online banking system with admin and user roles",
-      image: "/public/PNB.jpg",
+      image: "/PNB.jpg",
       link: "https://yourblogplatform.com",
     },
   ];
