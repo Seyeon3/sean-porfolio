@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #0a0a0a;
+  color: #f3f4f6;
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading-bar {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading-bar 0.8s ease infinite;
+  }
+
+  @keyframes text-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+ @keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background: linear-gradient(-45deg, #0f172a, #1e3a8a, #0f172a, #1e40af);
+  background-size: 300% 300%;
+  animation: gradient-x 12s ease infinite;
+}
+
+@keyframes coding-bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.animate-coding-bg {
+  background-color: #0a0f1e;
+  background-image: linear-gradient(
+      rgba(10, 15, 30, 0.9),
+      rgba(10, 15, 30, 0.9)
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 255, 0, 0.15) 0px,
+      rgba(0, 255, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  background-size: 100% 200%;
+  animation: coding-bg 8s linear infinite;
+}
+
+
+}
