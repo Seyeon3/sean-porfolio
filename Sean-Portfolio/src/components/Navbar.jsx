@@ -67,6 +67,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               { name: "About", href: "#about" },
               { name: "Skills", href: "#skills" },
               { name: "Project", href: "#project" },
+              { name: "Cerfications", href: "#certificates" },
               { name: "Contact", href: "#contact" },
             ].map((link) => (
               <a
