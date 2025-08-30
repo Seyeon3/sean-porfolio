@@ -13,6 +13,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     { name: "About", href: "#about", delay: "delay-400" },
     { name: "Skills", href: "#skills", delay: "delay-500" },
     { name: "Project", href: "#project", delay: "delay-600" },
+    { name: "Certifications", href: "#certificates", delay: "delay-700" },
     { name: "Contact", href: "#contact", delay: "delay-800" },
   ];
 
